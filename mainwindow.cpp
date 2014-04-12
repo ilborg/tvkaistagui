@@ -1370,6 +1370,7 @@ void MainWindow::downloadStatusChanged(int index)
 {
     Q_UNUSED(index);
     ui->downloadsTableView->resizeRowsToContents();
+    m_downloadTableModel->save();
     downloadSelectionChanged();
 }
 

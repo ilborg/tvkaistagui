@@ -227,6 +227,7 @@ void DownloadTableModel::removeDownload(int index)
         download.downloader->abort();
         download.downloader->deleteLater();
     }
+    save();
 }
 
 QString DownloadTableModel::title(int index) const
